@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week2_html</title>
+</head>
+
+<body>
+    <!--
+        form (action, method "get, post") > label > input 
+        input > type (text, password, submit, hidden, color, range, number) > required > placeholder > value > name
+        range > min, max, step
+        number > min, max, step
+    -->
+    <!--First Assingment-->
+    <form action="test.py" method="post">
+        <div>
+            <label>Username</label>
+            <br>
+            <input type="text" required placeholder="write your username" name="user_name">
+        </div>
+        <hr>
+        <div>
+            <label>Password</label>
+            <br>
+            <input type="password" placeholder="write your password" name="password">
+        </div>
+        <hr>
+        <div>
+            <label>Mobile</label>
+            <br>
+            <input type="text" placeholder="write yout phone number" name="phone">
+        </div>
+        <hr>
+        <div>
+            <label>Email</label>
+            <br>
+            <input type="email" required placeholder="writee your email" name=email>
+        </div>
+        <hr>
+        <div>
+            <label>Subject</label>
+            <br>
+            <input type="text" placeholder="write the subject" name="subject">
+        </div>
+        <input type="hidden" name="hidden" value="01069134381">
+        <hr>
+        <input type="reset" name="reset" value="Empty Form">
+        <input type="submit" name="submit" value="Send data">
+    </form>
+    <!-- Second Assingment -->
+    <hr>
+    <label>Range</label>
+    <br>
+    <input type="range" name="range" min="100" max="500" step="50" value="400">
+</body>
+
+</html>
