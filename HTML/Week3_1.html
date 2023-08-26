@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week3_1</title>
+</head>
+
+<body>
+    <!--
+        for label > "read only + disabled + Autofocus"
+        min length + max length
+        form > label + input 
+        input "attributes" > type, name, value, checked, id
+        label "attributs" > for (id)
+        radio > checked
+        checkbox
+        select (attributes) > id + name
+        option > selected
+        opt group > label + multiple 
+        text area > place holder, cols, rows
+    -->
+    <form method="get">
+        <!--
+            You should put labels and inputs in divs
+        -->
+        <div>
+            <label for="Username">Username</label>
+            <input type="text" name="Username" id="Username" autofocus minlength="5" maxlength="20">
+            <br>
+            <hr>
+            <label for="email">Email</label>
+            <input type="text" name="Email" id="email" value="o@o.com" readonly>
+            <br>
+            <hr>
+            <label for="token">Token</label>
+            <input type="text" name="token" id="token" hidden value="b92f1fc2fce391ad7af633723afd3055">
+            <br>
+            <hr>
+        </div>
+        <div>
+            <p>Skills</p>
+            <div>
+                <input type="checkbox" name="Skills" id="ana" value="Analysis">
+                <label for="ana">Analysis</label>
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" name="Skills" id="adv" value="Advanced Search">
+                <label for="adv">Advanced Search</label>
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" name="Skills" id="log" value="Logical Thinking">
+                <label for="log">Logical Thinking</label>
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" name="Skills" id="prob" value="Problem solving" checked>
+                <label for="prob">Problem solving</label>
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" name="Skills" id="plan" value="Planning">
+                <label for="plan">Planning</label>
+            </div>
+            <br>
+            <hr>
+        </div>
+        <div>
+            <!--
+                There is a problem in this code 
+                in query string url the choise doesnt appear, else the name "Job" appear
+                "fixed"
+                1- put each label and input and div togehter 
+                2- make sure to assume the value of the input and the name for each input 
+                3- make sure the id syntax is right
+            -->
+            <p>Job</p>
+            <div>
+                <input type="radio" name="Job" id="Front-End-Developer" value="front-End" checked>
+                <label for="Front-End-Developer">Front-End Developer</label>
+            </div>
+            <br>
+            <div>
+                <input type="radio" name="Job" id="Back-End-Developer" value="back-End">
+                <label for="Back-End-Developer">Back-End Developer</label>
+            </div>
+            <br>
+            <div>
+                <input type="radio" name="Job" id="Business-Analyst" value="business analyst">
+                <label for="Business-Analyst">Business Analyst</label>
+            </div>
+            <br>
+            <div>
+                <input type="radio" name="Job" id="Project-Manager" value="project manager">
+                <label for="Project-Manager">Project Manager</label>
+            </div>
+            <br>
+            <div>
+                <input type="radio" name="Job" id="Scrum-Master" value="scrum master">
+                <label for="Scrum-Master">Scrum Master</label>
+            </div>
+        </div>
+
+        <br>
+        <hr>
+
+        <div>
+            <label>Choose: </label>
+            <select name="Programming languages" id="pro-lan">
+                <optgroup label="HTML">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </optgroup>
+                <optgroup label="CSS">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <br>
+        <hr>
+
+        <textarea name="text-area" id="text-area" cols="50" rows="20"
+            placeholder="Write Here Why You Want To Learn Programming"></textarea>
+
+        <hr>
+        <br>
+
+        <div>
+            <input type="reset" name="empty" id="reset" value="Empty">
+            <input type="submit" name="send" id="send" value="Send">
+        </div>
+    </form>
+</body>
+
+</html>
